@@ -6,11 +6,13 @@ import { UserModule } from './user/user.module'
 import { AuthModule } from './auth/auth.module'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
+import { TodoModule } from './todo/todo.module'
 
 @Module({
   imports: [
     UserModule,
     AuthModule,
+    TodoModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
